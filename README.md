@@ -3,7 +3,7 @@ Overview:
 This program implements an auto-suggest (type-ahead) feature similar to Google Search. It takes up to 5 words as input and a search pattern, then outputs a list of words from the input that contain the part or phrase entered in the search pattern. 
 The search pattern can include wildcards (*), which are handled as follows:
 
-* at the beginning of the pattern matches any suffix of the word.
+* * at the beginning of the pattern matches any suffix of the word.
 * at the end of the pattern matches any prefix of the word.
 * at both ends of the pattern matches any substring of the word.
 No * in the pattern matches any part of the word.
