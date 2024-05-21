@@ -3,10 +3,10 @@ Overview:
 This program implements an auto-suggest (type-ahead) feature similar to Google Search. It takes up to 5 words as input and a search pattern, then outputs a list of words from the input that contain the part or phrase entered in the search pattern. 
 The search pattern can include wildcards (*), which are handled as follows:
 
-* * at the beginning of the pattern matches any suffix of the word.
-* at the end of the pattern matches any prefix of the word.
-* at both ends of the pattern matches any substring of the word.
-No * in the pattern matches any part of the word.
+* '*' at the beginning of the pattern matches any suffix of the word.
+* '*' at the end of the pattern matches any prefix of the word.
+* '*' at both ends of the pattern matches any substring of the word.
+* No * in the pattern matches any part of the word.
 
 Program Files:
 auto_suggest.py: Contains the auto_suggest function and the main program logic.
@@ -18,10 +18,10 @@ In the guidelines, it was encouraged to solve the assignment without using libra
 The auto_suggest function is responsible for filtering and suggesting words from the input list based on the search pattern provided.
 
 Helper Function matches: This function determines if a given word matches the search pattern as below:
-If the pattern starts and ends with *, it checks if the substring (excluding the * characters) is found anywhere in the word.
-If the pattern starts with *, it checks if the word ends with the substring following the *.
-If the pattern ends with *, it checks if the word starts with the substring before the *.
-If the pattern contains no *, it checks if the pattern is found anywhere within the word.
+1. If the pattern starts and ends with *, it checks if the substring (excluding the * characters) is found anywhere in the word.
+2. If the pattern starts with *, it checks if the word ends with the substring following the *.
+3. If the pattern ends with *, it checks if the word starts with the substring before the *.
+4. If the pattern contains no *, it checks if the pattern is found anywhere within the word.
 
 It iterates through each word in input_words and uses the matches function to check if the word matches the search pattern. If it does, the word is added to the output list and returned.
 
