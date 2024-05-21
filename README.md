@@ -27,9 +27,9 @@ It iterates through each word in input_words and uses the matches function to ch
 
 Testing:
 In test_auto_suggest.py, the 'unittest' module is used to create the test cases, and the 'auto_suggest function' is imported from auto_suggest.py to be tested.
-    Total Test Cases: 18
-    Passed Test Cases: 15
-    Failed Test Cased: 3
+</br>Total Test Cases: 18
+</br>Passed Test Cases: 15
+</br>Failed Test Cased: 3
 
 Running Test Cases:
 1. Keep auto_suggest.py and test_auto_suggest.py in the same folder.
