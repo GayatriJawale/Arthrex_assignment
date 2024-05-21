@@ -9,8 +9,8 @@ The search pattern can include wildcards (*), which are handled as follows:
 * No * in the pattern matches any part of the word.
 
 Program Files:
-auto_suggest.py: Contains the auto_suggest function and the main program logic.
-test_auto_suggest.py: Contains the unit tests for the auto_suggest function.
+    auto_suggest.py: Contains the auto_suggest function and the main program logic.
+    test_auto_suggest.py: Contains the unit tests for the auto_suggest function.
 
 Approach:
 In the guidelines, it was encouraged to solve the assignment without using library functions hence I have used list to store and update data while if-else for conditional filtering.
