@@ -5,7 +5,7 @@ class AdditionalTestCases(unittest.TestCase):
 
     # Test Cases to Validate the No. of i/p words
     def test_more_than_5_words(self):
-        input_words = ['bbbbb', 'bbb', 'bb', 'b', 'bbbbb','auekfh']
+        input_words = ['bbbbb', 'bbb', 'bb', 'lmnop', 'bbbbb','auekfh']
         search_pattern = 'bbb'
         self.assertEqual(auto_suggest(input_words, search_pattern), ['bbbbb', 'bbb', 'bbbbb'])
 
