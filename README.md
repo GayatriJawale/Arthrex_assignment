@@ -32,7 +32,6 @@ In test_auto_suggest.py, the 'unittest' module is used to create the test cases,
     Failed Test Cased: 3
 
 Running Test Cases:
-On VS Code:
 1. Keep auto_suggest.py and test_auto_suggest.py in the same folder.
 2. Run the auto_suggest.py (Optional)
 3. Run the test_auto_suggest.py as:
